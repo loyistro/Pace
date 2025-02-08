@@ -20,3 +20,6 @@ taxonomies:
   tag: "tags"
   series: "series"
   category: "categories"
+params:
+  dateFormat: "Jan 02, 2006"
+  enableSummary: false
