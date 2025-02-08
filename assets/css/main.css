@@ -147,7 +147,7 @@ header {
   width: 100%;
 }
 
-.header-title {
+.header-title a {
   margin: 0;
   padding: 0;
   border-radius: 4px;
@@ -157,7 +157,6 @@ header {
   text-decoration: underline overline;
   text-decoration-style: wavy;
   text-underline-offset: 0.4rem;
-  text-decoration-thickness: 0.2rem;
 }
 
 .header-bar {
