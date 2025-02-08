@@ -16,3 +16,7 @@ module:
   hugoVersion:
     extended: false
     min: 0.116.0
+taxonomies:
+  tag: "tags"
+  series: "series"
+  category: "categories"

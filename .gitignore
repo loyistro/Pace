@@ -45,3 +45,7 @@ public/tags/toc/index.xml
 .hugo_build.lock
 public/fonts/BricolageGrotesque\[opsz,wdth,wght].woff2
 public/js/bundle.min.js
+public/series/index.html
+public/series/index.xml
+public/series/finnal-piece/index.html
+public/series/finnal-piece/index.xml
