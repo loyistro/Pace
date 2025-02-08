@@ -21,5 +21,8 @@ taxonomies:
   series: "series"
   category: "categories"
 params:
+  Environment: "production"
   dateFormat: "Jan 02, 2006"
   enableSummary: false
+
+googleAnalytics: "G-xxxxxxxxx"
