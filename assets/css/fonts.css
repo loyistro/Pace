@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("/fonts/BricolageGrotesque[opsz,wdth,wght].woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
