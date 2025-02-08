@@ -27,3 +27,12 @@ params:
   enableRobotsTXT: true
 
 googleAnalytics: "G-xxxxxxxxx"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    noClasses: true
+    style: "nord"
