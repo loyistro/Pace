@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;  /* Smooth scrolling */
 }
 
+/* Page Structure */
 body {
   font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK", sans-serif;
   background: var(--background);
@@ -20,8 +21,6 @@ body {
   line-height: 1.6;
   font-size: 16px;
 }
-
-/* #endregion */
 
 .container {
   max-width: 900px;
@@ -35,6 +34,24 @@ body {
       padding: 0.8rem;
   }
 }
+
+main {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+footer {
+  margin: 1rem 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  font-variation-settings: "wght" 200;
+  color: var(--foreground-alpha);
+}
+
+/* #endregion */
+
+
 
 header {
   border-bottom: 1px solid #222;
