@@ -27,3 +27,8 @@ params:
   enableRobotsTXT: true
 
 googleAnalytics: "G-xxxxxxxxx"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
