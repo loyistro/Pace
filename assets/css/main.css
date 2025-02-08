@@ -249,3 +249,56 @@ menu a:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 /* #endregion */
+
+/* #region ========== Post ========== */
+article {
+  max-width: var(--page-width);
+} 
+
+.summary p {
+    margin-bottom: 1rem;
+    font-variation-settings: "wght" 200;
+    color: var(--foreground-alpha); 
+}
+
+.post-meta {
+  margin-bottom: 1rem;
+  color: var(--foreground-alpha);
+  font-variation-settings: "wght" 200;
+}
+
+.post-tags a {
+  margin-right: 0.3rem;
+}
+
+.series {
+  margin: 1.5rem 0;
+  padding: 0;
+  background-color: var(--theme-alpha);
+  border-radius: 4px;
+}
+
+.series p {
+  margin: 0;
+  padding: 0.5rem;
+  color: var(--foreground-alpha);
+}
+/* #endregion */
+
+/* #region ========== Taxonomies Page ========== */
+.year-heading {
+  border-bottom: 1px dotted var(--foreground);
+}
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.post-date {
+  margin: 0;
+  white-space: nowrap;
+}
+/* #endregion */
