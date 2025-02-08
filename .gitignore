@@ -44,3 +44,4 @@ public/tags/toc/index.html
 public/tags/toc/index.xml
 .hugo_build.lock
 public/fonts/BricolageGrotesque\[opsz,wdth,wght].woff2
+public/js/bundle.min.js
