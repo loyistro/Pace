@@ -1,0 +1,7 @@
+:root {
+    --theme: #EBCB8B;
+    --theme-alpha: color-mix(in srgb, var(--theme), transparent 90%);
+    --foreground: #ECEFF4;
+    --foreground-alpha: color-mix(in srgb, var(--foreground), transparent 30%);
+    --background: #2E3440;
+}

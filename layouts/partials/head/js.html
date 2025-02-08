@@ -1,12 +1,12 @@
-{{- with resources.Get "js/main.js" }}
-  {{- if eq hugo.Environment "development" }}
-    {{- with . | js.Build }}
-      <script src="{{ .RelPermalink }}"></script>
-    {{- end }}
-  {{- else }}
-    {{- $opts := dict "minify" true }}
-    {{- with . | js.Build $opts | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{- /* Get and merge JS file list */ -}}
+{{ $JSFiles := resources.Match "js/*.js" }}
+
+{{- /* Combine, minify, and fingerprint JS files */ -}}
+{{ $CombinedJS := $JSFiles | resources.Concat "js/bundle.js" | resources.Minify }}
+
+{{- /* Check the environment and load the appropriate JS file */ -}}
+<script src="{{ $CombinedJS.RelPermalink }}" 
+  {{- if ne hugo.Environment "development" }}
+    integrity="{{ $CombinedJS.Data.Integrity }}" crossorigin="anonymous"
+  {{- end }} defer>
+</script>
