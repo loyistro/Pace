@@ -20,7 +20,6 @@ params:
   Environment: "production"
   dateFormat: "Jan 02, 2006"
   enableSummary: false
-  enableRobotsTXT: true
 
 googleAnalytics: "G-xxxxxxxxx"
 
