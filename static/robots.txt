@@ -34,3 +34,5 @@ User-agent: Omgili
 Disallow: /
 User-agent: YouBot
 Disallow: /
+
+sitemap: https://loyistro.github.io/sitemap.xml
