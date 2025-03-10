@@ -51,6 +51,93 @@ footer {
 }
 /* #endregion */
 
+/* #region ========== Personal Info Card ========== */
+#personal-info {
+  margin: 15rem auto 5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+}
+
+.info-card__avatar {
+  min-width: 180px;
+  min-height: 180px;
+  position: relative;
+  border-radius: 100%;
+}
+
+ .info-card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: morph 8s ease-in-out infinite;
+  background-blend-mode: multiply;
+}
+
+.info-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+@keyframes morph {
+  0% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+} 
+
+.info-card__text {
+  margin: 0 0 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card__name {
+  margin: 1rem 0 1rem 0;
+  font-variation-settings: "opsz" 96, "wght" 600, "wdth" 75;
+  font-size: 5rem;
+  line-height: normal;
+  color: var(--theme);
+}
+
+.info-card__summary {
+  font-style: italic;
+  max-width: 450px;
+  color: var(--foreground-alpha)
+}
+
+@media (max-width: 768px) {
+  #personal-info {
+    margin: 5rem auto 5rem auto;
+  }
+  .info-card {
+    flex-direction: column;
+		text-align: center;
+  }
+  .info-card__text {
+    margin: 2rem auto 2rem 0;
+  }
+}
+/* #endregion */
+
 /* #region ========== Typography ========== */
 h1,
 h2,
