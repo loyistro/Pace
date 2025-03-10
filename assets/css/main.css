@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 768px;
   margin: 1rem auto;
   padding: 1rem;
   width: 100%;
@@ -41,14 +41,6 @@ main {
   padding: 0;
 }
 
-footer {
-  margin: 1rem 0;
-  padding: 0;
-  text-align: center;
-  font-size: 0.9rem;
-  font-variation-settings: "wght" 200;
-  color: var(--foreground-alpha);
-}
 /* #endregion */
 
 /* #region ========== Personal Info Card ========== */
@@ -194,6 +186,72 @@ p {
 }
 /* #endregion */
 
+/* #region ========== Footer and Menu ========== */
+footer {
+  margin: 5rem 0 1rem 0;
+}
+
+#social-media {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.social-media__divider {
+  flex: 1;
+  height: 2px;
+  background-color: var(--theme); 
+  max-width: 100%;
+}
+
+.social-media__icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem; 
+}
+
+.social-media__icon a{
+  display: flex;
+  margin: 0.5rem; 
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-content__info {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: var(--foreground-alpha);
+  align-items: left;
+  font-variation-settings: "wght" 300, "wdth" 75;
+}
+
+menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+menu a {
+  text-decoration: none;
+  color: var(--foreground);
+  font-variation-settings: "wght" 300, "wdth" 75;
+}
+
+menu a:hover{
+  color: var(--theme);
+}
+
+.menu-item {
+  display: flex;
+}
+/* #endregion */
+
 /* #region ========== Misc ========== */
 hr {
   border: .5px solid var(--foreground-alpha);
@@ -221,118 +279,6 @@ a {
 ::selection {
   background-color: var(--theme-alpha);
   color: var(--theme);
-}
-/* #endregion */
-
-/* #region ========== Header ========== */
-header {
-  margin-bottom: 1rem;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.header-title a {
-  margin: 0;
-  padding: 0;
-  border-radius: 4px;
-  font-size: 2.5rem;
-  font-variation-settings: "wght" 300, "wdth" 75;
-  color: var(--theme);
-  text-decoration: underline overline;
-  text-decoration-style: wavy;
-  text-underline-offset: 0.4rem;
-}
-
-.header-bar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* Menu (Desktop Default) */
-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-menu a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-  margin: 0;
-  padding: 0.5rem;
-  font-size: 1.25rem;
-  line-height: 1; /* reset to 16px to calculate the font size */
-  font-variation-settings: "wght" 300, "wdth" 75;
-}
-
-menu a:hover {
-  background-color: var(--theme-alpha);
-  color: var(--theme);
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hamburger Menu Button */
-#menu-toggle {
-  display: none;
-  color: var(--foreground);
-}
-
-/* Responsive Menu (Mobile) */
-@media (max-width: 768px) {
-  #menu-toggle {
-      display: inline-block;
-      margin: 0;
-      padding: 0.5rem;
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-  }
-
-  menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 5.3rem;
-      right: 1rem;
-      background: var(--background);
-      padding: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      opacity: 0;
-      transform: translateY(-10px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-
-  menu.show {
-      display: flex;
-      opacity: 1;
-      transform: translateY(0);
-  }
-
-  menu a {
-      display: block;
-      text-align: right;
-      margin: 0;
-      padding: 0.5rem;
-      width: 100%; /* Fill the container */
-  }
-}
-
-/* Hamburger Menu Button Hover Effect */
-#menu-toggle:hover {
-  background-color: var(--theme-alpha);
-  color: var(--theme);
-  border-radius: 0.25rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 /* #endregion */
 
