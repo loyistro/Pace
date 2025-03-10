@@ -1,24 +1,18 @@
-<div class="header-bar">
-  <!-- Menu-->
-
   {{- $page := .page }}
   {{- $menuID := .menuID }}
 
-  <button id="menu-toggle" aria-label="Toggle Menu">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 50 50" fill="currentColor" stroke-width="2.5" stroke="currentColor">
-      <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
-      </svg>
-  </button>
-
   {{- with index site.Menus $menuID }}
-  <menu id="nav-menu" class="hidden">
+  <menu>
     {{- range . }}
       {{- $isActive := or (eq $page.Permalink .URL) ($page.IsMenuCurrent .Menu .) }}
-      <a href="{{ .URL | absLangURL }}" class="{{ if $isActive }}active{{ end }}">
-        {{ .Name }}
+      <div class="menu-item">
+        <a href="{{ .URL | absLangURL }}">
+          {{ .Name }}
+          <svg height="14" width="14" viewBox="0 0 14 14" astro-icon="radix-icons:arrow-top-right">
+            <path fill="currentColor" fill-rule="evenodd" d="M3.646 11.354a.5.5 0 0 1 0-.707L10.293 4H6a.5.5 0 0 1 0-1h5.5a.5.5 0 0 1 .5.5V9a.5.5 0 0 1-1 0V4.707l-6.646 6.647a.5.5 0 0 1-.708 0" clip-rule="evenodd"></path>
+          </svg>
       </a>
+      </div>
     {{- end }}
   </menu>
-  {{- end }}
-
-</div>
+{{- end }}
