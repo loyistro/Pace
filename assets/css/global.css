@@ -22,6 +22,7 @@ body {
     color: var(--foreground);
     line-height: 1.6;
     font-size: 16px;
+    counter-reset: h2-counter; /* Typo heading counter */
   }
   
 main {
