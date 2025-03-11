@@ -16,10 +16,13 @@ article {
   max-width: var(--page-width);
 } 
 
+
 .summary p {
-    margin-bottom: 1rem;
-    font-variation-settings: "wght" 200;
-    color: var(--foreground-alpha); 
+  margin: 0;
+  font-style: italic;
+  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
+  color: var(--foreground-fade); 
+  line-height: 1.5;
 }
 
 .post-meta {
@@ -46,23 +49,7 @@ article {
 }
 /* #endregion */
 
-/* #region ========== Taxonomies Page ========== */
-.year-heading {
-  border-bottom: 1px dotted var(--foreground);
-}
 
-.post-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-.post-date {
-  margin: 0;
-  white-space: nowrap;
-}
-/* #endregion */
 
 /* #region ========== BLock Quote ========== */
 blockquote {

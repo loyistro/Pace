@@ -19,7 +19,7 @@ taxonomies:
 params:
   Environment: "production"
   dateFormat: "Jan 02, 2006"
-  enableSummary: false
+  enableSummary: true
 
 googleAnalytics: "G-xxxxxxxxx"
 
