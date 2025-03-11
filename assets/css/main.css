@@ -90,65 +90,7 @@
 
 /* #region ========== Footer and Menu ========== */
 
-#social-media {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-}
 
-.social-media__divider {
-  flex: 1;
-  height: 2px;
-  background-color: var(--theme); 
-  max-width: 100%;
-}
-
-.social-media__icon {
-  display: flex;
-  justify-content: center;
-  margin: 0 1rem; 
-}
-
-.social-media__icon a{
-  display: flex;
-  margin: 0.5rem; 
-}
-
-#footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#footer-content__info {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  color: var(--foreground-alpha);
-  align-items: left;
-  font-variation-settings: "wght" 300, "wdth" 75;
-}
-
-menu {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
-menu a {
-  text-decoration: none;
-  color: var(--foreground);
-  font-variation-settings: "wght" 300, "wdth" 75;
-}
-
-menu a:hover{
-  color: var(--theme);
-}
-
-.menu-item {
-  display: flex;
-}
 /* #endregion */
 
 

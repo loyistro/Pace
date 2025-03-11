@@ -1,0 +1,54 @@
+/* Footer */
+footer {
+    margin: 3rem 0 1rem 0;
+}
+
+/* Menu */
+menu {
+    display: flex;
+    justify-content: center;
+}
+
+menu a {
+    margin: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+  
+menu a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-align: left;
+}
+  
+/* Social Media */
+.social-media {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.social-media a{
+    display: flex;
+    margin: 1rem; 
+    transition: all 0.2s ease-in-out;
+}
+
+.social-media a:hover{
+    fill: var(--primary);
+}
+ 
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    menu a, .footer-content {
+        font-size: 0.9rem;
+    }
+}
+  
