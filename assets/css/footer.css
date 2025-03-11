@@ -12,15 +12,12 @@ menu {
 menu a {
     margin: 1rem;
     text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
   
 menu a:hover{
     color: var(--primary);
     text-decoration: underline;
-    letter-spacing: 2px;
-    text-align: left;
 }
   
 /* Social Media */
@@ -33,7 +30,7 @@ menu a:hover{
 .social-media a{
     display: flex;
     margin: 1rem; 
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .social-media a:hover{
