@@ -87,61 +87,6 @@
 }
 /* #endregion */
 
-/* #region ========== Typography ========== */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 1.4;
-    margin: 1.5rem 0 1rem 0;
-}
-
-h1 {
-    font-size: 2.25rem;
-    font-variation-settings: "wght" 700;
-}
-
-h2 {
-    font-size: 1.75rem;
-    font-variation-settings: "wght" 600;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-variation-settings: "wght" 500;
-}
-
-h4 {
-    font-size: 1.25rem;
-    font-variation-settings: "wght" 400;
-}
-
-h5 {
-    font-size: 1.125rem;
-    font-variation-settings: "wght" 400;
-}
-
-h6 {
-    font-size: 1rem;
-    font-variation-settings: "wght" 400;
-}
-
-p {
-    margin: 1rem 0;
-    font-variation-settings: "wght" 300;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-/* #endregion */
 
 /* #region ========== Footer and Menu ========== */
 
@@ -206,22 +151,7 @@ menu a:hover{
 }
 /* #endregion */
 
-/* #region ========== Misc ========== */
-hr {
-  border: .5px solid var(--foreground-alpha);
-  height: auto;
-  text-align: center;
-  margin: 0;
-}
 
-a {
-  color: var(--theme);
-  text-decoration: underline;
-  text-underline-offset: 0.1rem;
-  text-decoration-thickness: 0.05rem;
-  font-variation-settings: "wght" 300;
-  word-wrap: break-word;
-}
 
 .not-found {
   display: flex;
@@ -229,11 +159,7 @@ a {
   justify-content: center;
 }
 
-/* Selection styling */
-::selection {
-  background-color: var(--theme-alpha);
-  color: var(--theme);
-}
+
 /* #endregion */
 
 /* #region ========== Post ========== */
