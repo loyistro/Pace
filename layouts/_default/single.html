@@ -2,37 +2,29 @@
 <article>
   <h1>{{ .Title }}</h1>
 
-  {{/* Summary */}}
-  {{ if and .Site.Params.enableSummary .Params.summary }}
-    <p class="summary">{{ .Params.summary }}</p>
-  {{ end }}
-
-  <div class="post-meta">
-    {{/* Published date */}}
+  {{/* Published date */}}
+  <div class="article__date">
     {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $dateHuman := .Date | time.Format site.Params.dateFormat }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-  
-    {{/* Read time */}}
-    {{ if .ReadingTime }}
-      &nbsp; · &nbsp;
-      {{ .ReadingTime }} min read
-    {{ end }}
-  
-    {{/* Tags */}}
-    &nbsp; · &nbsp;
-    <span class="post-tags">
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-    </span>
+    <time datetime="{{ $dateMachine }}">
+      {{ $dateHuman }}
+    </time>
   </div>
-
-  {{/* Series */}}
-  {{- if .Params.series -}}
-  {{- with index (.GetTerms "series") 0 -}}
-    <div class="series">
-      <p>&#9432; This post is part of the <a href="{{ .Permalink }}" style="font-weight: bold">{{ .LinkTitle }}</a> series.</p>
+  
+  {{/* Article Summary */}}
+  {{ if and .Site.Params.enableSummary .Params.summary }}
+    <div class="article__summary">
+      SUMMARY: {{ .Params.summary }}
     </div>
-  {{- end -}}
+  {{ end }}
+
+  {{/* Article Series */}}
+  {{- if .Params.series -}}
+    <div class="article__series">
+      {{- with index (.GetTerms "series") 0 -}}
+        <p>&#9432; This article belongs to the  the <a href="{{ .Permalink }}" style="font-weight: bold">{{ .LinkTitle }}</a> series.</p>
+      {{- end -}}
+    </div>
   {{- end -}}
 
   {{ .Content }}

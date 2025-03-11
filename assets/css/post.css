@@ -1,0 +1,25 @@
+/* Article */
+.article__date {
+    color: var(--foreground-fade);
+    font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
+    text-align: center;
+}
+
+.article__summary {
+    font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
+    color: var(--foreground-fade); 
+    line-height: 1.5;
+}
+
+.article__series {
+    margin: 1rem 0;
+    padding: 0;
+    background-color: var(--primary-fade);
+    border-radius: 8px;
+}
+  
+.article__series p {
+    margin: 0;
+    padding: 0.5rem;
+    color: var(--foreground);
+}

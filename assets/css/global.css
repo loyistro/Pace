@@ -24,8 +24,3 @@ body {
     font-size: 16px;
     counter-reset: h2-counter; /* Typo heading counter */
   }
-  
-main {
-    margin: 1rem 0;
-}
-  

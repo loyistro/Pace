@@ -2,6 +2,7 @@
 h1 {
     font-size: 2rem;
     font-variation-settings: "opsz" 14, "wght" 500, "wdth" 75;
+    text-align: center;
 }
 
 h2 {
@@ -43,9 +44,8 @@ hr {
   }
   
 a {
-    color: var(--foreground);
+    color: var(--primary);
     text-decoration: underline;
-    text-decoration-color: var(--theme);
     text-underline-offset: 0.1rem;
     text-decoration-thickness: 0.05rem;
     font-variation-settings: "wght" 300;

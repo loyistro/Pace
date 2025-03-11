@@ -4,6 +4,18 @@
   flex-direction: column;
 }
 
+#list-info h1 {
+  text-align: left;
+}
+
+.list-info__summary p {
+  margin: 0;
+  font-style: italic;
+  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
+  color: var(--foreground-fade); 
+  line-height: 1.5;
+}
+
 #list-item {
   display: flex;
   flex-direction: column;

@@ -11,43 +11,7 @@
 
 /* #endregion */
 
-/* #region ========== Post ========== */
-article {
-  max-width: var(--page-width);
-} 
 
-
-.summary p {
-  margin: 0;
-  font-style: italic;
-  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
-  color: var(--foreground-fade); 
-  line-height: 1.5;
-}
-
-.post-meta {
-  margin-bottom: 1rem;
-  color: var(--foreground-alpha);
-  font-variation-settings: "wght" 200;
-}
-
-.post-tags a {
-  margin-right: 0.3rem;
-}
-
-.series {
-  margin: 1.5rem 0;
-  padding: 0;
-  background-color: var(--theme-alpha);
-  border-radius: 4px;
-}
-
-.series p {
-  margin: 0;
-  padding: 0.5rem;
-  color: var(--foreground-alpha);
-}
-/* #endregion */
 
 
 

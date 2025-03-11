@@ -4,4 +4,5 @@
     --background: #F5F5F1;
     --background-fade: #E5E9F0;
     --primary: #BF616A;
+    --primary-fade:color-mix(in srgb, var(--primary), transparent 90%);
 }
