@@ -15,21 +15,7 @@
 
 
 
-/* #region ========== BLock Quote ========== */
-blockquote {
-  margin: 1.5rem 0;
-  padding: 0;
-  border-left: 4px solid var(--theme);
-  background-color: var(--theme-alpha);
-}
 
-blockquote p {
-  margin: 0;
-  padding: 0.5rem;
-  color: var(--foreground-alpha);
-  font-style: italic;
-}
-/* #endregion */
 
 /* #region ========== Code ========== */
 /* Code block */

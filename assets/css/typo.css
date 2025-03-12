@@ -59,3 +59,28 @@ a {
     background-color: var(--primary-fade);
     color: var(--primary);
   }
+
+  /* #region ========== Block Quote ========== */
+blockquote {
+    margin: 1rem 0;
+    padding: 0 2rem;
+    position: relative;
+}
+
+blockquote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    mask: url('/svg/quote-up.svg') center / contain no-repeat;
+    -webkit-mask: url('/svg/quote-up.svg') center / contain no-repeat;
+    background-color: var(--foreground-fade);
+}
+
+blockquote p {
+    color: var(--foreground-fade);
+    font-style: italic;
+}
+  /* #endregion */
