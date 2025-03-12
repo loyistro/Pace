@@ -10,11 +10,12 @@ menu {
 }
 
 menu a {
+    color: var(--foreground);
     margin: 1rem;
     text-decoration: none;
     transition: all 0.3s ease;
 }
-  
+
 menu a:hover{
     color: var(--primary);
     text-decoration: underline;

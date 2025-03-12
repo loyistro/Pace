@@ -53,6 +53,7 @@ a {
     word-wrap: break-word;
 }
 
+
   /* Selection styling */
 ::selection {
     background-color: var(--primary-fade);
