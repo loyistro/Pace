@@ -17,40 +17,6 @@
 
 
 
-/* #region ========== Code ========== */
-/* Code block */
-pre {
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 4px;
-  overflow: auto;
-  line-height: 1.3rem;
-  scrollbar-width: none;  /* hide scrollbar for Firefox */
-}
-
-pre::-webkit-scrollbar {
-  display: none;  /* hide scrollbar for WebKit-based browsers */
-}
-
-code {
-  -webkit-font-smoothing: antialiased;
-  margin: 0;
-  padding: 2px;
-  border-radius: 4px;
-}
-
-code span {
-  display: inline !important;
-  font-size: 0.8rem;
-}
-
-/* Inline Code */
-p code {
-  background-color: var(--theme-alpha);
-  color: var(--theme);
-  font-size: 0.8rem;
-}
-/* #endregion */
 
 /* #region ========== Footnotes ========== */
 /* Footnotes Container */
