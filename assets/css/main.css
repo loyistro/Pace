@@ -136,7 +136,7 @@ code span {
 }
 
 /* ========== Inline Code ========== */
-p code {
+li code, p code {
   background-color: var(--primary-fade);
   color: var(--primary);
   font-size: 0.8rem;
