@@ -36,7 +36,6 @@ h3::before {
 
 p {
     margin: 1rem 0;
-    font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
 }
 
 /* #region ========== Misc ========== */
@@ -120,4 +119,52 @@ p code {
     font-size: 0.8rem;
 }
 /* #endregion */
+
+/* #region ========== Footnotes ========== */
+/* Footnotes Container */
+.footnotes {
+    margin: 1rem 0;
+}
+
+/* Horizontal Rule in Footnotes */
+.footnotes hr {
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 0.3;
+}
   
+.footnotes hr::before,
+.footnotes hr::after {
+    content: '//////////';
+    font-size: 1.5rem;
+    color: var(--foreground-fade);
+    margin: 0 0.5rem;
+}
+  
+/* Ordered List in Footnotes */
+.footnotes ol {
+    color: var(--foreground-fade);
+}
+  
+/* Paragraphs Inside Footnotes */
+.footnotes p {
+    margin: 0;
+}
+
+/* Footnote Reference */
+.footnote-ref {
+    margin: 0.2rem;
+}
+
+/* Footnote Back Reference */
+.footnote-backref {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+/* #endregion */
+
+/* #region ========== List ========== */
+ol, ul {
+    padding: 0 1.5rem;
+}
+/* #endregion */

@@ -18,79 +18,9 @@
 
 
 
-/* #region ========== Footnotes ========== */
-/* Footnotes Container */
-.footnotes {
-  margin: 1rem;
-  padding: 0;
-  border-style: none;
-}
 
-/* Ordered List in Footnotes */
-.footnotes ol {
-  color: var(--foreground-alpha);
-}
 
-/* Paragraphs Inside Footnotes */
-.footnotes p {
-  margin: 0;
-}
 
-/* Horizontal Rule in Footnotes */
-.footnotes hr {
-  border: none;
-  margin: 1rem 0;
-  text-align: center;
-  line-height: 0.5;
-}
-
-.footnotes hr::before,
-.footnotes hr::after {
-  content: '//////////';
-  font-size: 1.5rem;
-  color: var(--foreground-alpha);
-}
-
-.footnotes hr::before {
-  margin-right: 0.5rem;
-}
-
-.footnotes hr::after {
-  margin-left: 0.5rem;
-}
-
-/* Footnote Reference */
-.footnote-ref {
-  text-decoration: none;
-  font-size: 1rem;
-  margin: 0.2rem;
-}
-
-/* Footnote Back Reference */
-.footnote-backref {
-  font-size: 1rem;
-  text-decoration: none;
-}
-/* #endregion */
-
-/* #region ========== List ========== */
-ol {
-  margin: 0 1rem;
-  padding: 0 0.5rem;
-  font-variation-settings: 'wght' 300;
-}
-  
-ul {
-  margin: 0 1rem;
-  padding: 0 0.5rem;
-  font-variation-settings: 'wght' 300;
-}
-  
-li {
-  margin: 0;
-  padding: 0;
-}
-/* #endregion */
 
 /* #region ========== Table ========== */
 table {
