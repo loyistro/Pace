@@ -12,6 +12,10 @@
 <!-- Preload font files for improve loading speed -->
 <link rel="preload" href="{{ .Site.BaseURL }}fonts/BricolageGrotesque[opsz,wdth,wght].woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
+{{ with .OutputFormats.Get "rss" }}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 
