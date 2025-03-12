@@ -22,25 +22,3 @@
 
 
 
-/* #region ========== Table ========== */
-table {
-  border-collapse: collapse;
-  margin: 1rem 0;
-}
-
-th, td {
-  padding: .5rem;
-  border: 1px solid var(--foreground);
-  text-align: center !important;
-}
-
-th {
-  background-color: var(--theme-alpha);
-  color: var(--theme);
-}
-
-table code {
-  border-radius: 3px;
-  padding: 2px;
-}
-/* #endregion */
