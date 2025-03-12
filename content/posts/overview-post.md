@@ -13,7 +13,6 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit. Pellentesque vel la
 
 <!--more-->
 
-# Sample heading 1
 ## Sample heading 2
 ### Sample heading 3
 #### Sample heading 4

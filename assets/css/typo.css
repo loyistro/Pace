@@ -9,16 +9,16 @@ h2 {
     counter-increment: h2-counter;  /* Each time the h2 increases by 1. */
     counter-reset: h3-counter;      /* Reset h3 count when new h2 appears */
     margin: 2rem 0 0 -5%;
-    padding: 2rem 0 0 5%;
-    border-bottom: 1.5px solid var(--theme);
+    padding: 1rem 0 0 5%;
+    border-bottom: 1.5px solid var(--foreground-fade);
     font-variation-settings: "opsz" 14, "wght" 400, "wdth" 100;
 }
 
 h2::before {
     content: counter(h2-counter);
     color: var(--background);
-    background: var(--theme);
-    margin: 0 .5rem 0 0;
+    background: var(--foreground);
+    margin: 0 1rem 0 0;
     padding: .4rem;
 }
 
@@ -30,7 +30,8 @@ h3 {
 }
 
 h3::before {
-    content: counter(h2-counter) "." counter(h3-counter) " ";
+    content: counter(h2-counter) "." counter(h3-counter);
+    margin: 0 1rem 0 0;
 }
 
 p {
@@ -54,6 +55,6 @@ a {
 
   /* Selection styling */
 ::selection {
-    background-color: var(--theme-alpha);
-    color: var(--theme);
+    background-color: var(--primary-fade);
+    color: var(--primary);
   }

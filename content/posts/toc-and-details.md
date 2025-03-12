@@ -9,12 +9,12 @@ summary: ""
 categories: ["category1"]
 ---
 
-### What it is?
+## What it is?
 TOC is the box you see at the very top of this post. It may be framed (or not).
 
 <!--more-->
 
-### How to enable TOC?
+## How to enable TOC?
 To enable it, all you need to do when creating a new post at the very top is to insert the code:
 ```toml
 toc = true
