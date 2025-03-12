@@ -1,5 +1,18 @@
 {{ define "main" }}
-<section>
-  {{ .Content }}  
+<section id="hero">
+  <div class="hero-area">
+    <div class="hero-area__avatar">
+      <div class="hero-area__image">
+        <img src="{{ "/image/avatar.webp" | relURL }}" alt="Hero Intro">
+      </div>
+    </div>
+    <div class="hero-area__text">
+      <p class="hero-area__name">
+          LOYISTRO
+      </p>
+      <p class="hero-area__summary">
+        An introspective soul, nuanced in thought, faithful to ideals, journeying toward meaning.</p>
+    </div>
+  </div>
 </section>
 {{ end }}

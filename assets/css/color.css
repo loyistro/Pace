@@ -1,7 +1,8 @@
 :root {
-    --theme: #EBCB8B;
-    --theme-alpha: color-mix(in srgb, var(--theme), transparent 90%);
-    --foreground: #ECEFF4;
-    --foreground-alpha: color-mix(in srgb, var(--foreground), transparent 30%);
-    --background: #2E3440;
+    --foreground: #3B4252;
+    --foreground-fade: #4C566A;
+    --background: #F5F5F1;
+    --background-fade: #E5E9F0;
+    --primary: #BF616A;
+    --primary-fade:color-mix(in srgb, var(--primary), transparent 90%);
 }

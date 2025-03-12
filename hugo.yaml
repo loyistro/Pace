@@ -19,7 +19,7 @@ taxonomies:
 params:
   Environment: "production"
   dateFormat: "Jan 02, 2006"
-  enableSummary: false
+  enableSummary: true
 
 googleAnalytics: "G-xxxxxxxxx"
 
@@ -31,3 +31,15 @@ markup:
     codeFences: true
     noClasses: true
     style: "nord"
+
+outputs:
+  home:
+  - html
+  - rss
+  section:
+  - html
+  - rss
+  taxonomy:
+  - html
+  term:
+  - html
