@@ -14,7 +14,7 @@
   {{/* Article Summary */}}
   {{ if and .Site.Params.enableSummary .Params.summary }}
     <div class="article__summary">
-      SUMMARY: {{ .Params.summary }}
+      <span style="font-weight: bold;">Summary:</span> {{ .Params.summary }}
     </div>
   {{ end }}
 

@@ -188,7 +188,6 @@ p code {
 ol, ul {
   padding: 0 1.5rem;
 }
-/* #endregion */
 
 /* ========== Table ========== */
 table {
@@ -234,7 +233,6 @@ table code {
   position: absolute;
   width: 100%;
   height: 100%;
-  inset: 0; 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -251,14 +249,14 @@ table code {
 
 @keyframes morph {
   0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
   50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
   100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 } 
 
 .hero-area__text {
@@ -277,15 +275,12 @@ table code {
 .hero-area__summary {
   font-style: italic;
   max-width: 450px;
-  line-height: 1.5;
   color: var(--foreground-fade);
 }
 
 @media (max-width: 768px) {
   #hero {
-      margin: 5rem auto 3rem;
-      display: flex;
-      justify-content: center;
+    margin: 5rem auto 3rem;
   }
   .hero-area {
       flex-direction: column;
@@ -302,12 +297,10 @@ table code {
 /* ========== Article ========== */
 .article__date {
   color: var(--foreground-fade);
-  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
   text-align: center;
 }
 
 .article__summary {
-  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
   color: var(--foreground-fade); 
   line-height: 1.5;
 }
@@ -337,10 +330,7 @@ table code {
 
 .list-info__summary p {
   margin: 0;
-  font-style: italic;
-  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
   color: var(--foreground-fade); 
-  line-height: 1.5;
 }
 
 #list-item {
@@ -357,7 +347,7 @@ table code {
 
 .list-entry__year {
   font-size: 1.5rem;
-  font-variation-settings: "opsz" 14, "wght" 500, "wdth" 100;
+  font-variation-settings: "opsz" 14, "wght" 400, "wdth" 100;
   border-bottom: 1.5px dotted var(--foreground-fade);
 }
   
@@ -371,7 +361,6 @@ table code {
   margin: .2rem 0;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-variation-settings: "opsz" 14, "wght" 200, "wdth" 100;
 }
 
 .list-entry__title a:hover {
@@ -380,8 +369,59 @@ table code {
 }
 
 .list-entry__date {
-    margin: 0;
-    white-space: nowrap;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ========== Menu ========== */
+menu {
+  display: flex;
+  justify-content: center;
+}
+
+menu a {
+  color: var(--foreground);
+  margin: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+menu a:hover{
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ========== Social Media ========== */
+.social-media {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.social-media a{
+  display: flex;
+  margin: 1rem; 
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover{
+  fill: var(--primary);
+}
+
+/* ========== Footer ========== */
+footer {
+  margin: 3rem 0 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  menu a, .footer-content {
+      font-size: 0.9rem;
+  }
 }
 
 /* ========== Misc ========== */
@@ -390,16 +430,3 @@ table code {
   justify-content: center;
   margin: 15rem auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
