@@ -7,7 +7,7 @@ menus:
       pageRef: /
       weight: 10
     - name: Articles
-      pageRef: /categories
+      pageRef: /posts
       weight: 20
     - name: About
       pageRef: /about
