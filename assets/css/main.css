@@ -45,9 +45,9 @@ h2 {
 h2::before {
   content: counter(h2-counter);
   color: var(--background);
-  background: var(--foreground);
+  background: var(--primary);
   margin: 0 1rem 0 0;
-  padding: .4rem;
+  padding: .3rem;
 }
 
 h3 {
