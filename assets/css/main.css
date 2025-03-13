@@ -47,7 +47,7 @@ h2::before {
   color: var(--background);
   background: var(--primary);
   margin: 0 1rem 0 0;
-  padding: .3rem;
+  padding: .32rem;
 }
 
 h3 {
@@ -150,7 +150,7 @@ li code, p code {
 
 /* Horizontal Rule in Footnotes */
 .footnotes hr {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   text-align: center;
   line-height: 0.3;
 }
@@ -171,6 +171,7 @@ li code, p code {
 /* Paragraphs Inside Footnotes */
 .footnotes p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 /* Footnote Reference */
@@ -181,7 +182,6 @@ li code, p code {
 /* Footnote Back Reference */
 .footnote-backref {
   font-size: 0.8rem;
-  text-decoration: none;
 }
 
 /* ========== List ========== */
@@ -463,7 +463,7 @@ menu {
 
 menu a {
   color: var(--foreground);
-  margin: 1rem;
+  margin: .8rem 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -482,7 +482,7 @@ menu a:hover{
 
 .social-media a{
   display: flex;
-  margin: 1rem; 
+  margin: .8rem 1rem;
   transition: all 0.3s ease;
 }
 
@@ -498,10 +498,15 @@ footer {
 .footer-content {
   display: flex;
   justify-content: center;
+  font-size: 0.8rem;
+}
+
+.footer-content p {
+  margin: .8rem 1rem;
 }
 
 @media (max-width: 768px) {
-  menu a, .footer-content {
+  menu a {
       font-size: 0.9rem;
   }
 }
