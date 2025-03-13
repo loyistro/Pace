@@ -6,11 +6,11 @@ menus:
     - name: Home
       pageRef: /
       weight: 10
-    - name: Posts
+    - name: Articles
       pageRef: /posts
       weight: 20
-    - name: Tags
-      pageRef: /tags
+    - name: About
+      pageRef: /about
       weight: 30
 taxonomies:
   tag: "tags"

@@ -72,7 +72,7 @@ Adipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat v
 4. Marionberry
 5. Melon
     - Cantaloupe
-    - Honeydew
+    - Honeydew `li inline code`
     - Watermelon
 6. Miracle fruit
 7. Mulberry
@@ -80,9 +80,9 @@ Adipisicing voluptate ipsum culpa voluptate id aute laboris labore esse fugiat v
 ### Unordered List
 
 - Olive
-- Orange
+- Orange `li inline code`
     - Blood orange
-    - Clementine
+    - Clementine `li inline code`
 - Papaya
 - Ut aute ipsum occaecat nisi culpa Lorem id occaecat cupidatat id id magna laboris ad duis. Fugiat cillum dolore veniam nostrud proident sint consectetur eiusmod irure adipisicing.
 - Passionfruit
