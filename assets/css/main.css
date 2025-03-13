@@ -150,7 +150,7 @@ li code, p code {
 
 /* Horizontal Rule in Footnotes */
 .footnotes hr {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   text-align: center;
   line-height: 0.3;
 }
@@ -171,6 +171,7 @@ li code, p code {
 /* Paragraphs Inside Footnotes */
 .footnotes p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 /* Footnote Reference */
@@ -181,7 +182,6 @@ li code, p code {
 /* Footnote Back Reference */
 .footnote-backref {
   font-size: 0.8rem;
-  text-decoration: none;
 }
 
 /* ========== List ========== */
