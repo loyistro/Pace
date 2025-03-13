@@ -37,9 +37,122 @@
 </div>
 </section>
 
+
+<section id="category-filter" class="category-filter">
+  <div class="category-filter__tags">
+    <button class="category-tag active" data-category="all">All</button>
+    
+    
+    
+    
+  </div>
+</section>
+
 <section id="list-item">
   
+  
+  
+  <div class="category-empty-message">
+    <h1>No posts found in this category</h1>
+  </div>
 </section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const categoryTags = document.querySelectorAll('.category-tag');
+  const listEntries = document.querySelectorAll('.list-entry__title');
+  const emptyMessage = document.querySelector('.category-empty-message');
+  
+  
+  listEntries.forEach(entry => {
+    entry.classList.add('visible');
+    entry.style.position = '';
+    entry.style.visibility = '';
+    entry.style.height = '';
+    entry.style.margin = '';
+    entry.style.padding = '';
+    entry.style.overflow = '';
+    entry.style.display = 'flex';
+  });
+  
+  
+  categoryTags.forEach(tag => {
+    tag.addEventListener('click', function() {
+      
+      categoryTags.forEach(t => t.classList.remove('active'));
+      
+      
+      this.classList.add('active');
+      
+      const selectedCategory = this.getAttribute('data-category');
+      let visibleCount = 0;
+      
+      
+      listEntries.forEach(entry => {
+        const entryCategories = entry.getAttribute('data-categories');
+        
+        
+        entry.classList.add('category-transition');
+        
+        if (selectedCategory === 'all' || entryCategories.includes(selectedCategory)) {
+          
+          setTimeout(() => {
+            entry.style.position = '';
+            entry.style.visibility = '';
+            entry.style.height = '';
+            entry.style.margin = '';
+            entry.style.padding = '';
+            entry.style.overflow = '';
+            entry.style.display = 'flex';
+            setTimeout(() => {
+              entry.classList.add('visible');
+              entry.classList.remove('category-transition');
+            }, 50);
+          }, 200);
+          visibleCount++;
+        } else {
+          
+          entry.classList.remove('visible');
+          setTimeout(() => {
+            entry.style.position = 'absolute';
+            entry.style.visibility = 'hidden';
+            entry.style.height = '0';
+            entry.style.margin = '0';
+            entry.style.padding = '0';
+            entry.style.overflow = 'hidden';
+            entry.classList.remove('category-transition');
+          }, 300);
+        }
+      });
+      
+      
+      document.querySelectorAll('.list-entry').forEach(yearGroup => {
+        const visibleEntries = Array.from(yearGroup.querySelectorAll('.list-entry__title')).filter(entry => {
+          const entryCategories = entry.getAttribute('data-categories');
+          return selectedCategory === 'all' || entryCategories.includes(selectedCategory);
+        });
+        
+        const yearHeading = yearGroup.querySelector('.list-entry__year');
+        if (visibleEntries.length === 0) {
+          yearHeading.style.display = 'none';
+        } else {
+          yearHeading.style.display = 'block';
+        }
+      });
+      
+      
+      if (visibleCount === 0) {
+        setTimeout(() => {
+          emptyMessage.classList.add('visible');
+        }, 300);
+      } else {
+        emptyMessage.classList.remove('visible');
+      }
+    });
+  });
+});
+</script>
 
 
     </main>
