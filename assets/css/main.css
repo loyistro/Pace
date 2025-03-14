@@ -217,7 +217,7 @@ table code {
 #hero {
   display: flex;
   justify-content: center;
-  margin: 15rem auto 5rem auto;
+  margin: 13rem auto 5rem auto;
 }
 
 .hero-area {
@@ -285,7 +285,7 @@ table code {
     font-size: 1.5rem;
   }
   #hero {
-    margin: 5rem auto 3rem;
+    margin: 3rem auto 3rem;
   }
   .hero-area {
       flex-direction: column;
