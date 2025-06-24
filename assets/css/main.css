@@ -459,6 +459,24 @@ table code {
 menu {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.menu-line {
+  flex: 1;
+  height: 1px;
+  margin: 0 1rem;
+}
+
+.left-line {
+  background: linear-gradient(to left,  var(--primary) 30%, transparent 100%);
+}
+
+.right-line {
+  background: linear-gradient(to right, var(--primary) 30%, transparent 100%);
 }
 
 menu a {
