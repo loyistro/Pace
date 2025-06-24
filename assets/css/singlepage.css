@@ -1,0 +1,152 @@
+/* ========== Article ========== */
+.article__date {
+  color: var(--foreground-fade);
+  text-align: center;
+}
+
+.article__summary {
+  color: var(--foreground-fade); 
+  line-height: 1.5;
+}
+
+.article__series {
+  margin: 1rem 0;
+  padding: 0;
+  background-color: var(--primary-fade);
+  border-radius: 8px;
+}
+
+.article__series p {
+  margin: 0;
+  padding: 0.5rem;
+  color: var(--foreground);
+}
+
+/* ========== Block Quote ========== */
+blockquote {
+  margin: 1rem 0;
+  padding: 0 2rem;
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  mask: url('/svg/quote-up.svg') center / contain no-repeat;
+  -webkit-mask: url('/svg/quote-up.svg') center / contain no-repeat;
+  background-color: var(--foreground-fade);
+}
+
+blockquote p {
+  color: var(--foreground-fade);
+  font-style: italic;
+}
+
+/* ========== Code Block========== */
+pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+  line-height: 1.3rem;
+  scrollbar-width: none;  /* hide scrollbar for Firefox */
+  background-color: var(--background);
+}
+
+pre::-webkit-scrollbar {
+  display: none;  /* hide scrollbar for WebKit-based browsers */
+}
+
+code {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+code span {
+  display: inline !important;
+  font-size: 0.8rem;
+}
+
+/* ========== Inline Code ========== */
+li code, p code {
+  background-color: var(--primary-fade);
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+/* ========== Footnotes ========== */
+/* Footnotes Container */
+.footnotes {
+  margin: 1rem 0;
+}
+
+/* Horizontal Rule in Footnotes */
+.footnotes hr {
+  margin: 1.5rem 0;
+  text-align: center;
+  line-height: 0.3;
+}
+
+.footnotes hr::before,
+.footnotes hr::after {
+  content: '//////////';
+  font-size: 1.5rem;
+  color: var(--foreground-fade);
+  margin: 0 0.5rem;
+}
+
+/* Ordered List in Footnotes */
+.footnotes ol {
+  color: var(--foreground-fade);
+}
+
+/* Paragraphs Inside Footnotes */
+.footnotes p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Footnote Reference */
+.footnote-ref {
+  margin: 0.2rem;
+}
+
+/* Footnote Back Reference */
+.footnote-backref {
+  font-size: 0.8rem;
+}
+
+/* ========== List ========== */
+ol, ul {
+  padding: 0 1.5rem;
+}
+
+/* ========== Table ========== */
+table {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+th, td {
+  padding: .5rem;
+  border: 1px solid var(--foreground);
+  text-align: center !important;
+}
+
+th {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+table code {
+  border-radius: 3px;
+  padding: 2px;
+}
