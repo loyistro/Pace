@@ -5,23 +5,6 @@
   <div class="list-info__summary">{{ .Content }}</div>
 </section>
 
-<!-- Category filter section -->
-<section id="category-filter" class="category-filter">
-  <div class="category-filter__tags">
-    <button class="category-tag active" data-category="all">All</button>
-    {{ $categories := slice }}
-    {{ range .Pages }}
-      {{ range .Params.categories }}
-        {{ $categories = $categories | append . }}
-      {{ end }}
-    {{ end }}
-    
-    {{ range sort (uniq $categories) }}
-      <button class="category-tag" data-category="{{ . | urlize }}">{{ . }}</button>
-    {{ end }}
-  </div>
-</section>
-
 <section id="list-item">
   {{ range .Pages.GroupByDate "2006" }}
   <div class="list-entry">
@@ -38,9 +21,4 @@
     </div>
   {{ end }}
   
-  <!-- Empty state message -->
-  <div class="category-empty-message">
-    <h1>No posts found in this category</h1>
-  </div>
-</section>
 {{ end }}

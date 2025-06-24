@@ -1,12 +1,17 @@
 {{- /* Get and merge JS file list */ -}}
 {{ $JSFiles := resources.Match "js/*.js" }}
 
-{{- /* Combine, minify, and fingerprint JS files */ -}}
-{{ $CombinedJS := $JSFiles | resources.Concat "js/bundle.js" | resources.Minify }}
+{{- /* Check out if there are JS files */ -}}
+{{- if gt (len $JSFiles) 0 }}
+  {{- /* Combine, minify, and fingerprint JS files */ -}}
+  {{ $CombinedJS := $JSFiles | resources.Concat "js/bundle.js" | resources.Minify }}
 
-{{- /* Check the environment and load the appropriate JS file */ -}}
-<script src="{{ $CombinedJS.RelPermalink }}" 
-  {{- if ne hugo.Environment "development" }}
-    integrity="{{ $CombinedJS.Data.Integrity }}" crossorigin="anonymous"
-  {{- end }} defer>
-</script>
+  {{- /* Check the environment and load the appropriate JS file */ -}}
+  <script src="{{ $CombinedJS.RelPermalink }}" 
+    {{- if ne hugo.Environment "development" }}
+      integrity="{{ $CombinedJS.Data.Integrity }}" crossorigin="anonymous"
+    {{- end }} defer>
+  </script>
+{{- else }}
+{{- /* <script> skipped: no js/*.js found */ -}}
+{{- end }}
