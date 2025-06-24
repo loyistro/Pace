@@ -4,7 +4,7 @@ date: 2022-08-26T22:29:10+08:00
 draft: true
 tags: ["Highlight", "test"]
 description: "desc. Test Highlight"
-summary: ""
+summary: "This is summary."
 categories: ["category2"]
 ---
 

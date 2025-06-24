@@ -1,11 +1,15 @@
 {{- /* Get and merge CSS file list */ -}}
 {{ $CSSFiles := resources.Match "css/*.css" }}
 
-{{- /* Combine, minify, and fingerprint CSS files */ -}}
-{{ $CombinedCSS := $CSSFiles | resources.Concat "css/bundle.css" | resources.Minify }}
+{{- /* Check out if there are CSS files */ -}}
+{{- if gt (len $CSSFiles) 0 }}
+  {{- /* Combine, minify, and fingerprint CSS files */ -}}
+  {{ $CombinedCSS := $CSSFiles | resources.Concat "css/bundle.css" | resources.Minify }}
 
-{{- /* Check the environment and load the appropriate CSS file */ -}}
-<link rel="stylesheet" href="{{ $CombinedCSS.RelPermalink }}" 
-  {{- if ne hugo.Environment "development" }}
-    integrity="{{ $CombinedCSS.Data.Integrity }}" crossorigin="anonymous"
-  {{- end }}>
+  {{- /* Check the environment and load the appropriate CSS file */ -}}
+  <link rel="stylesheet" href="{{ $CombinedCSS.RelPermalink }}" 
+    {{- if ne hugo.Environment "development" }}
+      integrity="{{ $CombinedCSS.Data.Integrity }}" crossorigin="anonymous"
+    {{- end }}>
+{{- else }}
+ {{- end }}

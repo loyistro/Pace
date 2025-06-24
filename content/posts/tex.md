@@ -6,7 +6,7 @@ draft: true
 tags: ["Tex", "test"]
 series: ["finnal piece"]
 description: "desc. Test Tex"
-summary: ""
+summary: "This is summary."
 categories: ["category1"]
 ---
 

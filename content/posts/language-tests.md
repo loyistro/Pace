@@ -4,7 +4,7 @@ title: "Language Tests"
 tags: ["language", "test"]
 series: ["finnal piece"]
 description: "desc. language tests"
-summary: ""
+summary: "This is summary."
 categories: ["category1"]
 date: 2020-07-08T00:00:00+08:00
 ---
