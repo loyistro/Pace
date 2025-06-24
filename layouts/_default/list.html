@@ -1,24 +1,37 @@
 {{ define "main" }}
   
-<section id="list-info">
-  <h1>{{ .Title }}</h1>
-  <div class="list-info__summary">{{ .Content }}</div>
+<section>
+  <div class="listpage-title">
+    {{ .Title }}
+  </div>
+  <div class="listpage-summary">
+    {{ .RawContent }}
+  </div>
 </section>
 
-<section id="list-item">
+<section>
   {{ range .Pages.GroupByDate "2006" }}
-  <div class="list-entry">
-    <span class="list-entry__year">{{ .Key }}</span>
+  <div class="listpage-item">
+    <div class="listpage-item-year">
+      {{ .Key }}
+    </div>
 
     {{ range .Pages }}
-      <div class="list-entry__title" 
-           data-categories="{{ range .Params.categories }}{{ . | urlize }} {{ end }}"
-           data-date="{{ .Date.Format "2006-01-02" }}">
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        <p class="list-entry__date">{{ .Date.Format "Jan 02" }}</p>
+      <div class="listpage-item-entry">
+          <div class="listpage-item-entry-date">
+            {{ .Date.Format "Jan 02" }}
+          </div>
+          <div class="listpage-item-subentry">
+              <a href="{{ .RelPermalink }}">
+                {{ .LinkTitle }}
+              </a>
+              <div class="listpage-item-subentry-summary">
+                {{ .Params.summary }}
+              </div>
+          </div>
       </div>
     {{ end }}
-    </div>
+  </div>
   {{ end }}
-  
+</section>
 {{ end }}

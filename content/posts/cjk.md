@@ -4,7 +4,7 @@ date: 2022-08-26T22:30:10+08:00
 draft: true
 tags: ["CJK", "test"]
 description: "desc. Test CJK"
-summary: ""
+summary: "This is summary."
 categories: ["category2"]
 ---
 
