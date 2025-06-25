@@ -1,0 +1,62 @@
+h1 {
+    font-size: 2.5rem;
+    font-variation-settings: "opsz" 96, "wght" 500, "wdth" 75;
+    text-align: center;
+  }
+  
+  h2 {
+    counter-increment: h2-counter;  /* Each time the h2 increases by 1. */
+    counter-reset: h3-counter;      /* Reset h3 count when new h2 appears */
+    margin: 2rem 0 0 -5%;
+    padding: 1rem 0 0 5%;
+    border-bottom: 1.5px solid var(--foreground);
+    font-variation-settings: "opsz" 14, "wght" 400, "wdth" 75;
+  }
+  
+  h2::before {
+    content: counter(h2-counter);
+    color: var(--background);
+    background: var(--salient);
+    margin: 0 1rem 0 0;
+    padding: .32rem;
+  }
+  
+  h3 {
+    font-variation-settings: "opsz" 14, "wght" 300, "wdth" 75;
+    counter-increment: h3-counter; 
+    margin: 1rem 0 0 -5%;
+    padding: 1rem 0 0 5%;
+  }
+  
+  h3::before {
+    content: counter(h2-counter) "." counter(h3-counter);
+    margin: 0 1rem 0 0;
+  }
+  
+  p {
+    margin: 1rem 0;
+  }
+  
+  hr {
+    border: 1px dotted var(--background);
+  }
+  
+  a {
+    color: var(--salient);
+    text-decoration: underline;
+    text-underline-offset: 0.1rem;
+    text-decoration-thickness: 0.05rem;
+    font-variation-settings: "wght" 300;
+    word-wrap: break-word;
+  }
+  
+  ::selection {
+    background-color: var(--salient-second);
+    color: var(--salient);
+  }  
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }

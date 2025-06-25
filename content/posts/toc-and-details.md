@@ -5,7 +5,7 @@ draft: true
 tags: ["TOC", "test"]
 series: ["finnal piece"]
 description: "desc. Test TOC, deatails and styles"
-summary: ""
+summary: "This is summary."
 categories: ["category1"]
 ---
 

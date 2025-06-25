@@ -6,7 +6,7 @@ draft: true
 tags: ["Highlight", "test"]
 series: ["finnal piece"]
 description: "desc. Test Markdown"
-summary: "desc. Test Markdown"
+summary: "This is summary."
 categories: ["category1"]
 ---
 
