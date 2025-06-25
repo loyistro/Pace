@@ -1,18 +1,18 @@
 /* ========== Article ========== */
 .article__date {
-  color: var(--foreground-fade);
+  color: var(--fade);
   text-align: center;
 }
 
 .article__summary {
-  color: var(--foreground-fade); 
+  color: var(--fade); 
   line-height: 1.5;
 }
 
 .article__series {
   margin: 1rem 0;
   padding: 0;
-  background-color: var(--primary-fade);
+  background-color: var(--salient-second);
   border-radius: 8px;
 }
 
@@ -38,11 +38,11 @@ blockquote::before {
   height: 1.5rem;
   mask: url('/svg/quote-up.svg') center / contain no-repeat;
   -webkit-mask: url('/svg/quote-up.svg') center / contain no-repeat;
-  background-color: var(--foreground-fade);
+  background-color: var(--fade);
 }
 
 blockquote p {
-  color: var(--foreground-fade);
+  color: var(--fade);
   font-style: italic;
 }
 
@@ -54,7 +54,7 @@ pre {
   overflow: auto;
   line-height: 1.3rem;
   scrollbar-width: none;  /* hide scrollbar for Firefox */
-  background-color: var(--background);
+  background-color: var(--subtle);
 }
 
 pre::-webkit-scrollbar {
@@ -75,8 +75,8 @@ code span {
 
 /* ========== Inline Code ========== */
 li code, p code {
-  background-color: var(--primary-fade);
-  color: var(--primary);
+  background-color: var(--salient-second);
+  color: var(--salient);
   font-size: 0.8rem;
 }
 
@@ -97,13 +97,13 @@ li code, p code {
 .footnotes hr::after {
   content: '//////////';
   font-size: 1.5rem;
-  color: var(--foreground-fade);
+  color: var(--fade);
   margin: 0 0.5rem;
 }
 
 /* Ordered List in Footnotes */
 .footnotes ol {
-  color: var(--foreground-fade);
+  color: var(--fade);
 }
 
 /* Paragraphs Inside Footnotes */

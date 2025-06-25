@@ -14,11 +14,11 @@ menu {
   }
   
   .left-line {
-    background: linear-gradient(to left,  var(--primary) 30%, transparent 100%);
+    background: linear-gradient(to left,  var(--foreground) 30%, transparent 100%);
   }
   
   .right-line {
-    background: linear-gradient(to right, var(--primary) 30%, transparent 100%);
+    background: linear-gradient(to right, var(--foreground) 30%, transparent 100%);
   }
   
   menu a {
@@ -29,6 +29,6 @@ menu {
   }
   
   menu a:hover{
-    color: var(--primary);
+    color: var(--salient);
     text-decoration: underline;
   }  

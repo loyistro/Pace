@@ -9,14 +9,14 @@ h1 {
     counter-reset: h3-counter;      /* Reset h3 count when new h2 appears */
     margin: 2rem 0 0 -5%;
     padding: 1rem 0 0 5%;
-    border-bottom: 1.5px solid var(--foreground-fade);
+    border-bottom: 1.5px solid var(--foreground);
     font-variation-settings: "opsz" 14, "wght" 400, "wdth" 100;
   }
   
   h2::before {
     content: counter(h2-counter);
     color: var(--background);
-    background: var(--primary);
+    background: var(--salient);
     margin: 0 1rem 0 0;
     padding: .32rem;
   }
@@ -38,11 +38,11 @@ h1 {
   }
   
   hr {
-    border: 1px dotted var(--foreground-alpha);
+    border: 1px dotted var(--background);
   }
   
   a {
-    color: var(--primary);
+    color: var(--salient);
     text-decoration: underline;
     text-underline-offset: 0.1rem;
     text-decoration-thickness: 0.05rem;
@@ -51,8 +51,8 @@ h1 {
   }
   
   ::selection {
-    background-color: var(--primary-fade);
-    color: var(--primary);
+    background-color: var(--salient-second);
+    color: var(--salient);
   }  
 
   @media (max-width: 768px) {

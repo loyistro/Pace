@@ -1,8 +1,8 @@
 :root {
-    --foreground: #3B4252;
-    --foreground-fade: #4C566A;
-    --background: #F5F5F1;
-    --background-fade: #f0f0f0;
-    --primary: #BF616A;
-    --primary-fade:color-mix(in srgb, var(--primary), transparent 85%);
+    --foreground: #F5F5F1;
+    --fade: #ECEFF4;
+    --background: #2E3440;
+    --subtle: #434C5E;
+    --salient: #EBCB8B;
+    --salient-second:color-mix(in srgb, var(--salient), transparent 85%);
 }
