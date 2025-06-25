@@ -1,11 +1,11 @@
 .listpage-title {
-    font-size: 2rem;
-    font-variation-settings: "opsz" 14, "wght" 500, "wdth" 75;
+    font-size: 2.5rem;
+    font-variation-settings: "opsz" 96, "wght" 500, "wdth" 75;
     text-align: left;
   }
   
 .listpage-summary {
-    color: var(--fade); 
+    color: var(--foreground); 
 }
   
 .listpage-item {
@@ -16,11 +16,12 @@
   
 .listpage-item-year {
     font-size: 1.5rem;
-    font-variation-settings: "opsz" 14, "wght" 400, "wdth" 100;
-    border-bottom: 1.5px dotted var(--fade);
+    font-variation-settings: "opsz" 96, "wght" 500, "wdth" 100;
+    border-bottom: 1.5px dotted var(--foreground);
   }
    
 .listpage-item-entry-date {
+    width: 4rem;
     margin: 0 1rem 0 0;
     justify-content: top;
 }
@@ -34,6 +35,7 @@
     color: var(--foreground);
     margin: .2rem 0;
     text-decoration: none;
+    font-variation-settings: "opsz" 96, "wght" 500, "wdth" 100;
 }
   
 .listpage-item-entry a:hover {
@@ -43,6 +45,6 @@
 
 .listpage-item-subentry-summary {
     color: var(--fade);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-style: italic;
 }

@@ -1,6 +1,6 @@
 :root {
     --foreground: #F5F5F1;
-    --fade: #ECEFF4;
+    --fade: color-mix(in srgb, var(--foreground), transparent 25%);
     --background: #2E3440;
     --subtle: #434C5E;
     --salient: #EBCB8B;

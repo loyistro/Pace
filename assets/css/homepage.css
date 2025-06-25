@@ -1,19 +1,13 @@
-.homepage-hero {
+.hero {
   display: flex;
   justify-content: center;
   margin: 13rem auto 5rem auto;
 }
   
-.homepage-hero-avatar {
+.hero-avatar {
   width: 210px;
   height: 210px;
   position: relative;
-}
-  
-.homepage-hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,7 +16,7 @@
   background-color: white;
 }
   
-.homepage-hero-image img {
+.hero-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -41,35 +35,37 @@
   }
 } 
   
-.homepage-hero-area {
+.hero-info {
   margin: 0 0 0 5rem;
   display: flex;
   flex-direction: column;
 }
   
-.homepage-hero-area-name {
+.hero-info-name {
   margin: 1rem 0;
   font-variation-settings: "opsz" 96, "wght" 800, "wdth" 75;
   font-size: 5rem;
   line-height: normal;
 }
   
-.homepage-hero-area-summary {
+.hero-info-summary {
+  font-size: 1.8rem;
   font-style: italic;
+  font-variation-settings: "opsz" 96, "wght" 700, "wdth" 75;
   max-width: 450px;
-  color: var(--fade);
+  color: var(--foreground);
 }
   
 @media (max-width: 768px) {
-  .homepage-hero {
+  .hero {
     flex-direction: column;
     text-align: center;
     margin: 3rem auto 3rem;
   }
-  .homepage-hero-avatar {
+  .hero-avatar {
     margin: 0 auto;
   }
-  .homepage-hero-area {
+  .hero-info {
     margin: 1rem auto;
   }
 }
