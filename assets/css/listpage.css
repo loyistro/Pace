@@ -5,7 +5,7 @@
   }
   
 .listpage-summary {
-    color: var(--foreground-fade); 
+    color: var(--fade); 
 }
   
 .listpage-item {
@@ -17,7 +17,7 @@
 .listpage-item-year {
     font-size: 1.5rem;
     font-variation-settings: "opsz" 14, "wght" 400, "wdth" 100;
-    border-bottom: 1.5px dotted var(--foreground-fade);
+    border-bottom: 1.5px dotted var(--fade);
   }
    
 .listpage-item-entry-date {
@@ -37,12 +37,12 @@
 }
   
 .listpage-item-entry a:hover {
-    color: var(--primary);
+    color: var(--salient);
     text-decoration: underline;
 }
 
 .listpage-item-subentry-summary {
-    color: var(--foreground-fade);
+    color: var(--fade);
     font-size: 0.8rem;
     font-style: italic;
 }
