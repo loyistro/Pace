@@ -32,9 +32,9 @@
 }
   
 .listpage-item-entry a {
-    color: var(--foreground);
+    color: var(--salient);
     margin: .2rem 0;
-    text-decoration: none;
+    text-decoration: underline;
     font-variation-settings: "opsz" 96, "wght" 500, "wdth" 100;
 }
   
