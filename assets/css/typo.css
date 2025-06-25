@@ -1,6 +1,6 @@
 h1 {
-    font-size: 2rem;
-    font-variation-settings: "opsz" 14, "wght" 500, "wdth" 75;
+    font-size: 2.5rem;
+    font-variation-settings: "opsz" 96, "wght" 500, "wdth" 75;
     text-align: center;
   }
   
@@ -10,7 +10,7 @@ h1 {
     margin: 2rem 0 0 -5%;
     padding: 1rem 0 0 5%;
     border-bottom: 1.5px solid var(--foreground);
-    font-variation-settings: "opsz" 14, "wght" 400, "wdth" 100;
+    font-variation-settings: "opsz" 14, "wght" 400, "wdth" 75;
   }
   
   h2::before {
@@ -22,7 +22,7 @@ h1 {
   }
   
   h3 {
-    font-variation-settings: "opsz" 14, "wght" 300, "wdth" 100;
+    font-variation-settings: "opsz" 14, "wght" 300, "wdth" 75;
     counter-increment: h3-counter; 
     margin: 1rem 0 0 -5%;
     padding: 1rem 0 0 5%;

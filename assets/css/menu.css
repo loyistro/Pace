@@ -14,11 +14,11 @@ menu {
   }
   
   .left-line {
-    background: linear-gradient(to left,  var(--foreground) 30%, transparent 100%);
+    background: linear-gradient(to left,  var(--foreground) 1%, transparent 100%);
   }
   
   .right-line {
-    background: linear-gradient(to right, var(--foreground) 30%, transparent 100%);
+    background: linear-gradient(to right, var(--foreground) 1%, transparent 100%);
   }
   
   menu a {
@@ -26,6 +26,8 @@ menu {
     margin: .8rem 1rem;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-variation-settings: "opsz" 96, "wght" 600, "wdth" 75;
+    font-size: 1.4rem;
   }
   
   menu a:hover{

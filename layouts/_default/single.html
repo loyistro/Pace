@@ -3,7 +3,7 @@
   <h1>{{ .Title }}</h1>
 
   {{/* Published date */}}
-  <div class="article__date">
+  <div class="post-date">
     {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $dateHuman := .Date | time.Format site.Params.dateFormat }}
     <time datetime="{{ $dateMachine }}">
@@ -13,14 +13,14 @@
   
   {{/* Article Summary */}}
   {{ if and .Site.Params.enableSummary .Params.summary }}
-    <div class="article__summary">
+    <div class="post-summary">
       <span style="font-weight: bold;">Summary:</span> {{ .Params.summary }}
     </div>
   {{ end }}
 
   {{/* Article Series */}}
   {{- if .Params.series -}}
-    <div class="article__series">
+    <div class="post-series">
       {{- with index (.GetTerms "series") 0 -}}
         <p>&#9432; This article belongs to the  the <a href="{{ .Permalink }}" style="font-weight: bold">{{ .LinkTitle }}</a> series.</p>
       {{- end -}}

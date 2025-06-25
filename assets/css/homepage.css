@@ -49,8 +49,9 @@
 }
   
 .hero-info-summary {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-style: italic;
+  font-variation-settings: "opsz" 96, "wght" 700, "wdth" 75;
   max-width: 450px;
   color: var(--foreground);
 }

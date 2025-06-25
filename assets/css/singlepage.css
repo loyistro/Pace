@@ -1,22 +1,22 @@
 /* ========== Article ========== */
-.article__date {
+.post-date {
   color: var(--fade);
   text-align: center;
 }
 
-.article__summary {
+.post-summary {
   color: var(--fade); 
   line-height: 1.5;
 }
 
-.article__series {
+.post-series {
   margin: 1rem 0;
   padding: 0;
   background-color: var(--salient-second);
   border-radius: 8px;
 }
 
-.article__series p {
+.post-series p {
   margin: 0;
   padding: 0.5rem;
   color: var(--foreground);
@@ -38,7 +38,7 @@ blockquote::before {
   height: 1.5rem;
   mask: url('/svg/quote-up.svg') center / contain no-repeat;
   -webkit-mask: url('/svg/quote-up.svg') center / contain no-repeat;
-  background-color: var(--fade);
+  background-color: var(--foreground);
 }
 
 blockquote p {
@@ -97,7 +97,7 @@ li code, p code {
 .footnotes hr::after {
   content: '//////////';
   font-size: 1.5rem;
-  color: var(--fade);
+  color: var(--foreground);
   margin: 0 0.5rem;
 }
 
@@ -137,12 +137,12 @@ table {
 
 th, td {
   padding: .5rem;
-  border: 1px solid var(--foreground);
+  border: 1px solid var(--salient);
   text-align: center !important;
 }
 
 th {
-  background-color: var(--foreground);
+  background-color: var(--salient);
   color: var(--background);
 }
 
